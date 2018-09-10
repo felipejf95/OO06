@@ -15,16 +15,5 @@ import java.util.Scanner;
 public class Jogo {
     int numFaces;
     ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
-    
-    
-    public void quantFaces(){
-        Scanner ler = new Scanner(System.in);
-        System.out.println("Digite a quantidade de dados: ");
-        this.numFaces = ler.nextInt();
-    }
-    
-    public void defineFaces(){
-        quantFaces();
-        Dado dado = new Dado(this.numFaces);        
-    }  
+        
 }

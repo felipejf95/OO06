@@ -15,19 +15,30 @@ import java.util.Scanner;
 public class Dado {
     int faces[] = new int[6];
     int numFaces = 6;
-    int face;
-    
-    public Dado(int n){
-        this.numFaces = n;
-        faces = new int[n];
-    }    
-    
-    public void rolarDados(){        
-            face = new Random().nextInt(6)+1;      
+    private int face;
+        
+    public int rolarDados(){        
+            return face = new Random().nextInt(6)+1;      
     }
     
-    public void exibirFaces(){
-            System.out.println(face);
+    public String imprimeDado(int face){
+            switch(face){
+                case 1: 
+                    return ".";
+                case 2:
+                    return ":";
+                case 3:
+                    return ":.";
+                case 4:
+                    return "::";
+                case 5:
+                    return "::.";
+                case 6: 
+                    return ":::";
+                
+                default:
+                    return ("");
+            }
         }
     }
     

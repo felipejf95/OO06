@@ -16,6 +16,10 @@ public class JogoBozo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Jogador j1 = new Jogador();
+        j1.lancarDados();
+        j1.escolheDado();
+        j1.escolhePosicao();
     }
     
 }

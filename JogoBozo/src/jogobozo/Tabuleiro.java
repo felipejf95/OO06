@@ -10,11 +10,17 @@ package jogobozo;
  * @author ice
  */
 public class Tabuleiro {
-    int pontPosicao[] = new int[10];
+    int[] tabuleiro = new int[10];
+    
+    public void iniciaTabuleiro(){
+        for(int i=0; i<10; i++){
+            this.tabuleiro[i] = 0;
+        }
+    }
     
     public void exibeTabuleiro(){
-        for(int i=0; i < pontPosicao.length; i++){
-            System.out.print(i+1 +" ");
+        for(int i=0; i <10; i++){
+            System.out.println(i+1 +" ");
         }
     }
     
