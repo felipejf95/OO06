@@ -14,6 +14,13 @@ public class Placar {
     int posicaoPontuacao [] = new int[10];
     int pontos = 0;
     
+    public void comecaVetor(){
+    for(int i=0; i<10;i++){
+       this.posicaoPontuacao[i] = -9;
+    }
+    
+    }
+    
     public void exibirPlacar (){
         for (int i=0; i<10; i++){
           System.out.print(" " + posicaoPontuacao[i]);
@@ -29,7 +36,13 @@ public class Placar {
             
         return this.pontos;   
     }    
+     
+    public void calculaPontuacao (Dado [] dado){
+        for(int i=0; i<5; i++){
+                            
+        }
         
+    }
     
     
 }

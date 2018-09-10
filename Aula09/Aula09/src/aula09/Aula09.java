@@ -13,22 +13,28 @@ public class Aula09 {
 
     /**
      * @param args the command line arguments
+     * @author juarez
      */
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Dado dado1 = new Dado();
-        dado1.numfaces = 6;
-       // dado1.rolarDado();
+        Dado[] dados = new Dado[6];
+        Jogador [] jogador = new Jogador[2];
         
-        Dado [] dados = new Dado [5];
-            for (int i=0; i<5;i++){
-            dados[i].numfaces = 6;
-            }   
+        for (int i = 0; i < 5; ++i) {
+               dados[i] = new Dado();
+               dados[i].numfaces = 6;
+        }
         
-        for (int i=0; i<5;i++){
+        for(int i=0; i<5; i++){
             dados[i].rolarDado();
-            }
+        }   
+        
+        
+        
+        
+           
+        
         }
    
     

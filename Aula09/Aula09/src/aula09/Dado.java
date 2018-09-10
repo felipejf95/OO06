@@ -1,5 +1,7 @@
 package aula09;
 
+import java.util.Scanner;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +16,7 @@ public class Dado {
     int numfaces = 0;
     int faces [];
     int numAleatorio;
-    
+    Scanner leitura = new Scanner(System.in);
 
     public Dado() {
     }
@@ -42,4 +44,22 @@ public class Dado {
         this.numfaces = numfaces;
     }
     
+    
+    public void rolarNovamente(){
+        int [] auxiliar  = new int [5];
+        System.out.println("Digite o 1 se quiser rolar os dado novamente:");
+            for (int i=1; i<6; i++){
+                System.out.println("Dado: " + i);
+                auxiliar[i] = leitura.nextInt();
+            }
+    }
+    
+    public void dadosGirar(int [] auxiliar){
+         for (int i = 0; i < 5; ++i) {
+            if(auxiliar[i] == 1){
+            //   dados[i].rolarDados; 
+            }
+        }
+    
+    }
 }
