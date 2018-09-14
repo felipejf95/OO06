@@ -6,14 +6,12 @@
 package jogobozo;
 
 import java.util.Random;
-import java.util.Scanner;
 
 /**
  *
  * @author ice
  */
-public class Dado {
-    int faces[] = new int[6];
+public class Dado {    
     int numFaces = 6;
     private int face;
         
