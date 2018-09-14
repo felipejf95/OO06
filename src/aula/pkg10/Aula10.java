@@ -26,6 +26,11 @@ public class Aula10 {
         dog.comer();
         dog.dormir();
         dog.emitirSom();
+        
+        Gato cat = new Gato();
+        cat.comer();
+        cat.dormir();
+        cat.emitirSom();
     }
     
 }

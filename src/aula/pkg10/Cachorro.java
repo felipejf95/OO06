@@ -10,5 +10,7 @@ package aula.pkg10;
  * @author ice
  */
 public class Cachorro extends Animal {
-    
+    public void emitirSom(){
+        System.out.println("Au au");
+    }
 }

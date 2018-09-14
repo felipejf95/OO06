@@ -9,6 +9,8 @@ package aula.pkg10;
  *
  * @author ice
  */
-public class Gato {
-    
+public class Gato extends Animal{
+        public void emitirSom(){
+        System.out.println("mingau");
+    }
 }
