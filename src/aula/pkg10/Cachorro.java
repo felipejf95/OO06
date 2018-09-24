@@ -10,7 +10,16 @@ package aula.pkg10;
  * @author ice
  */
 public class Cachorro extends Animal {
-    public void emitirSom(){
-        System.out.println("Au au");
+
+    public Cachorro() {
+    }
+
+    public Cachorro(String nome) {
+        super(nome);
+    }
+    
+    @Override 
+    public void emitirSom(){        
+        System.out.println("Latindo");
     }
 }

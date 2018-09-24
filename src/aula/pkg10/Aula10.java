@@ -5,6 +5,8 @@
  */
 package aula.pkg10;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author ice
@@ -17,12 +19,7 @@ public class Aula10 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Animal gato = new Animal();
-        gato.comer();
-        gato.dormir();
-        gato.emitirSom();
-        
-        Cachorro dog = new Cachorro();
+        /*Cachorro dog = new Cachorro();
         dog.comer();
         dog.dormir();
         dog.emitirSom();
@@ -30,7 +27,24 @@ public class Aula10 {
         Gato cat = new Gato();
         cat.comer();
         cat.dormir();
-        cat.emitirSom();
+        cat.emitirSom();*/
+        
+        ArrayList<Animal> animais = new ArrayList<Animal>();
+            animais.add(new Gato("Tobias"));
+            animais.add(new Cachorro("Toto"));
+            animais.add(new Rato("Stuart"));
+            Gato gato1 = new Gato();
+            gato1.setNome("Tobias");
+            Gato gato2 = new Gato();
+            gato2.setNome("Tobias");
+            for(int i = 0; i<animais.size(); i++){
+                animais.get(i).emitirSom();                
+                System.out.println(animais.get(i).toString());
+            }
+            
+            System.out.println(gato1.equals(gato2));
+            
+            
     }
     
 }

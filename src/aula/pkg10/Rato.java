@@ -9,18 +9,18 @@ package aula.pkg10;
  *
  * @author ice
  */
-public class Gato extends Animal{   
-    
-    public void emitirSom(){
-        System.out.println("Miando");
-    } 
+public class Rato extends Animal{
 
-    public Gato() {
+    @Override
+    public void emitirSom() {
+        System.out.println("Fungando");
     }
 
-    public Gato(String nome) {
+    public Rato() {
+    }
+
+    public Rato(String nome) {
         super(nome);
     }
-            
     
 }

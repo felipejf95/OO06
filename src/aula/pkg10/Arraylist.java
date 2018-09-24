@@ -3,19 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aula27.pkg08.pkg18;
+package aula.pkg10;
 
 /**
  *
  * @author ice
  */
-public class Aula270818 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+class Arraylist<T> {
     
 }

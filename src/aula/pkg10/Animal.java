@@ -8,14 +8,21 @@ package aula.pkg10;
 
 /**
  *
- * @author ice
+ * @author juarez
  */
-public class Animal {
-    int idade;
-    String raca;
-    String nome;
+
+//Classe pai ou superclasse, felino, canino, lobo, leão, vaca (draw.io tem q desenhar)
+
+public abstract class Animal {
+    private int idade;
+    private String raca;
+    private String nome;
 
     public Animal() {
+    }
+
+    public Animal(String nome) {
+        this.nome = nome;
     }
 
      public void comer(){
@@ -26,9 +33,7 @@ public class Animal {
        System.out.println("Estou dormindo");
    }
    
-   public void  emitirSom(){
-       System.out.println("Emitindo o som");
-   }
+   public abstract void emitirSom();
     
     
     
@@ -56,5 +61,13 @@ public class Animal {
         this.nome = nome;
     }
     
+     @Override
+    public String toString(){
+        return this.nome;
+    }
+    
+    public boolean equals(Animal animal){
+        return this.nome.equals(animal.nome);
+    }
    
 }
