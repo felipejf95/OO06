@@ -28,6 +28,10 @@ public abstract class Animal {
      public void comer(){
        System.out.println("Estou comendo");
    }
+    
+    public void comer(String comida){
+        System.out.println("Estou comendo "+comida);
+    }
    
    public void dormir(){
        System.out.println("Estou dormindo");

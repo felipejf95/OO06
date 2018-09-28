@@ -39,7 +39,15 @@ public class Aula10 {
             gato2.setNome("Tobias");
             for(int i = 0; i<animais.size(); i++){
                 animais.get(i).emitirSom();                
-                System.out.println(animais.get(i).toString());
+                System.out.println("Nome: "+animais.get(i).toString());
+                if(animais.get(i).getClass() == Gato.class){
+                    animais.get(i).comer("Ração");
+                }
+                else if(animais.get(i).getClass() == Cachorro.class){
+                    animais.get(i).comer("Carne");
+                }else{
+                    animais.get(i).comer("Queijo");
+                }
             }
             
             System.out.println(gato1.equals(gato2));

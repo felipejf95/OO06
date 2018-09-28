@@ -9,7 +9,7 @@ package aula.pkg10;
  *
  * @author ice
  */
-public class Gato extends Animal{   
+public class Gato extends Animal implements Robo{   
     
     public void emitirSom(){
         System.out.println("Miando");
@@ -20,6 +20,16 @@ public class Gato extends Animal{
 
     public Gato(String nome) {
         super(nome);
+    }
+
+    @Override
+    public void aspirarChao() {
+        
+    }
+
+    @Override
+    public void tocarMusica() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
             
     
